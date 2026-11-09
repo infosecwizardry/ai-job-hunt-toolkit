@@ -1,0 +1,32 @@
+# Keep private candidate data and generated application artifacts out of public repos.
+candidate-profile.md
+candidate-profile*.md
+private/
+output/
+generated/
+.local-sensitive-patterns
+
+# Common resume artifacts
+*Master Resume*
+*Resume*.docx
+*Resume*.pdf
+*Resume*.md
+*Cover Letter*.docx
+*Cover Letter*.pdf
+*Cover Letter*.md
+
+# The shipped prompts are tool files, not anyone's resume. On case-insensitive
+# systems (Windows, macOS) "*Resume*.md" would also match prompts/resume.md.
+!prompts/*.md
+
+# Render/conversion output
+rendered-*/
+tmp-render*/
+lo-profile/
+lo-convert/
+
+# Local editor/system noise
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak

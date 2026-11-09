@@ -1,0 +1,15 @@
+# Store text as LF in the repo so diffs stay stable across Windows and macOS/Linux.
+* text=auto eol=lf
+
+*.md           text eol=lf
+*.py           text eol=lf
+*.yaml         text eol=lf
+*.yml          text eol=lf
+.gitignore     text eol=lf
+.gitattributes text eol=lf
+
+# Generated documents are binary; never diff or normalize them.
+*.docx binary
+*.pdf  binary
+*.png  binary
+*.jpg  binary
