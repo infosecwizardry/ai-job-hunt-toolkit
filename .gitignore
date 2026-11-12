@@ -1,6 +1,7 @@
 # Keep private candidate data and generated application artifacts out of public repos.
 candidate-profile.md
 candidate-profile*.md
+master-list.md
 private/
 output/
 generated/
